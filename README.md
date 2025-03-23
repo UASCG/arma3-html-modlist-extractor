@@ -7,6 +7,7 @@ The scripts are primarily intended for Linux servers but should work with Window
 
 **Note that you require a Steam account that owns Arma 3 in order to download Arma 3 Workshop mods due to restrictions preventing anonymous workshop downloads. Ideally, this should be an account that you do not use for anything else besides server administration.**
 
+
 ## arma3-html-modlist-parser
 **Arma 3 Modlist Parser for Server Administrator Use**
 
@@ -14,7 +15,7 @@ Use this simple JavaScript program with standard Arma 3 launcher modlist HTML fi
 
 You can use this on your own computer or on a server that has a GUI.
 
-## Usage Instructions
+### Usage Instructions
 ![Screenshot comparing a normal Arma 3 modlist HTML file with one that has been used with arma3-html-modlist-parser.](/example.png)
 See example.png and example.html to see how the program is supposed to function.
 
@@ -22,12 +23,14 @@ See example.png and example.html to see how the program is supposed to function.
 2. Using a text editor, add this before the </body> tag at the end of the modlist HTML: `<script src="scripts/main.js"></script>`
 3. Results are printed at the end of the HTML page. These can then be used as inputs while using SteamCMD (ideally with a download script), or used when launching a server via the command line.
 
+
 ## dlarma3server
 **Simple SteamCMD Arma 3 Server Download Script**
 
 This is a simple script to download Arma 3 Server using SteamCMD on your server. It saves you from a few command inputs and automatically exits SteamCMD once the download is complete.
 1. (Optional) The default download directory is `../arma3server`, you can change this to anything you prefer by editing the `force_install_dir` line. It is recommended that you use lowercase letters and numbers only. If you do not set a directory, a default directory will be used.
 2. Run the script by using the command `steamcmd +runscript /home/steam/dlarma3server`.
+
 
 ## dlmods
 **Simple SteamCMD Mod Download Script**
@@ -46,7 +49,8 @@ This script changes all filenames and directory names to lowercase, then copies 
 2. Make the file into an executable by using `chmod +x arma3modsrenameandmove.sh`.
 3. Run the script by using `./arma3modsrenameandmove.sh`.
 
-### A note regarding very large mods (+1GB)
+
+## A note regarding very large mods (+1GB)
 SteamCMD will time out any mod downloads which are larger than 1GB in size. For more information, see here:
 
 https://steamcommunity.com/discussions/forum/1/215439774859993377/
