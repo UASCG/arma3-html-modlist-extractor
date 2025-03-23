@@ -16,7 +16,7 @@ Use this simple JavaScript program with standard Arma 3 launcher modlist HTML fi
 You can use this on your own computer or on a server that has a GUI.
 
 ### Usage Instructions
-![Screenshot comparing a normal Arma 3 modlist HTML file with one that has been used with arma3-html-modlist-parser.](/example.png)
+![Screenshot comparing a normal Arma 3 modlist HTML file with one that has been used with arma3-html-modlist-parser.](/arma3-html-modlist-parser/example.png)
 See example.png and example.html to see how the program is supposed to function.
 
 1. Generate a modlist in the Arma 3 launcher, and then place the generated HTML file into the arma3-html-modlist-parser-and-related-scripts folder.

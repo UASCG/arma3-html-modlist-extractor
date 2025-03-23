@@ -1,0 +1,4 @@
+force_install_dir ../arma3server
+login anonymous
+app_update 233780 validate
+exit
