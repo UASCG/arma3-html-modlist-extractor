@@ -8,6 +8,7 @@ The scripts are primarily intended for Linux servers but should work with Window
 **Note that you require a Steam account that owns Arma 3 in order to download Arma 3 Workshop mods due to restrictions preventing anonymous workshop downloads. Ideally, this should be an account that you do not use for anything else besides server administration.**
 
 
+
 ## arma3-html-modlist-parser
 **Arma 3 Modlist Parser for Server Administrator Use**
 
@@ -24,12 +25,14 @@ See example.png and example.html to see how the program is supposed to function.
 3. Results are printed at the end of the HTML page. These can then be used as inputs while using SteamCMD (ideally with a download script), or used when launching a server via the command line.
 
 
+
 ## dlarma3server
 **Simple SteamCMD Arma 3 Server Download Script**
 
 This is a simple script to download Arma 3 Server using SteamCMD on your server. It saves you from a few command inputs and automatically exits SteamCMD once the download is complete.
 1. (Optional) The default download directory is `../arma3server`, you can change this to anything you prefer by editing the `force_install_dir` line. It is recommended that you use lowercase letters and numbers only. If you do not set a directory, a default directory will be used.
 2. Run the script by using the command `steamcmd +runscript /home/steam/dlarma3server`.
+
 
 
 ## dlmods
@@ -43,11 +46,13 @@ This is a simple script to download Arma 3 Workshop mods using SteamCMD on your 
 
 ## arma3modsrenameandmove.sh
 **Lowercase and Move Mods On Linux**
+
 This script changes all filenames and directory names to lowercase, then copies them to the Arma 3 Server directory. Lowercasing is particularly important on Linux servers which have trouble running Arma 3 mods correctly if they are not lowercased.
 
 1. (Optional) Edit any paths in the file if necessary.
 2. Make the file into an executable by using `chmod +x arma3modsrenameandmove.sh`.
 3. Run the script by using `./arma3modsrenameandmove.sh`.
+
 
 
 ## A note regarding very large mods (+1GB)
